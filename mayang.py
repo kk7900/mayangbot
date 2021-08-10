@@ -3,7 +3,7 @@ import datetime
 import random
 import asyncio
 intents = discord.Intents.all()
-token = 'ODc0NDc2ODMyMzc0Nzg4MTE2.YRHiAw.X-r4xBPuZ9A63j4OlbFEFfoKxls'
+token = 'ODc0NDc2ODMyMzc0Nzg4MTE2.YRHiAw.'
 client = discord.Client(intents=intents)
 
 @client.event
