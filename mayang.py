@@ -2,8 +2,8 @@ import discord
 import datetime
 import random
 import asyncio
+import os
 intents = discord.Intents.all()
-token = 'ODc0NDc2ODMyMzc0Nzg4MTE2.YRHiAw.'
 client = discord.Client(intents=intents)
 
 @client.event
@@ -97,4 +97,5 @@ async def on_message_delete(message):
     embed.set_footer(text=f"유저 ID:{message.author.id} • 메시지 ID: {message.id}")
     await client.get_channel(int(bot_logs)).send(embed=embed)
 
-client.run(token)
+access_token = os.environ['BOT_TOKEN']
+client.run(access_token)
