@@ -97,5 +97,5 @@ async def on_message_delete(message):
     embed.set_footer(text=f"유저 ID:{message.author.id} • 메시지 ID: {message.id}")
     await client.get_channel(int(bot_logs)).send(embed=embed)
 
-access_token = os.environ['BOT_TOKEN']
+access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
